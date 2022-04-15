@@ -1,3 +1,19 @@
+@media (max-width: 1190px) {
+  .header__part--tel {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .account__title,
+  .cart__text {
+    display: none;
+  }
+  .account {
+    padding: 0;
+  }
+}
+
 @media (max-width: 950px) {
   .hide-950 {
     display: none;

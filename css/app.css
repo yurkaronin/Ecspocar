@@ -2365,7 +2365,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(37, 189, 125, .8);
+  background-color: #ff980085;
   -webkit-transform-origin: center;
   transform-origin: center;
   -webkit-transform: scaleY(0);
@@ -2621,7 +2621,7 @@ html {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(37, 189, 125, .8);
+  background-color: #ff980085;
   -webkit-transform-origin: center;
   transform-origin: center;
   -webkit-transform: scaleY(0);

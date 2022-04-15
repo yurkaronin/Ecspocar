@@ -120,6 +120,7 @@
               </a>
             </div>
             <form action="#" class="filter filter--side">
+
               <button class="filter__title js-accordion" id="accordion-open">
                 <span class="filter__title-text">Марка машины</span>
                 <img src="img/svg-min/filter-arrow.svg" alt="Стрелка" class="filter__icon">
@@ -285,33 +286,7 @@
                 </div>
               </div>
               <!-- дополнительный фильтр  -->
-              <button class="filter__title js-accordion" id="accordion-open">
-                <span class="filter__title-text">Город</span>
-                <img src="img/svg-min/filter-arrow.svg" alt="Стрелка" class="filter__icon">
-              </button>
-              <div class="filter__dropdown dropdown">
-                <button class="dropdown__button">г. Тула, ул. Рязанская, 38</button>
 
-                <div class="filter__double-input-wrapper">
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="all">Выберите город</li>
-                    <li class="dropdown__list-item" data-value="tula-ryazanskaya-38">г. Тула, ул. Рязанская, 38</li>
-                    <li class="dropdown__list-item" data-value="kaluga-zernovaya-19a">г. Калуга ул. Зерновая, 19а</li>
-                    <li class="dropdown__list-item" data-value="kolomna-100-km">г. Коломна 100-й км а/д М 5</li>
-                    <li class="dropdown__list-item" data-value="novomoskovsk-kosmonavtov-39g">г. Новомосковск ул.
-                      Космонавтов, 39Г</li>
-                    <li class="dropdown__list-item" data-value="yaroslavl-pos-nagornyj-dorozhnaya-8">г. Ярославль пос.
-                      Нагорный, ул. Дорожная 8</li>
-                    <li class="dropdown__list-item" data-value="tver-malye-peremerki-42">г. Тверь Малые Перемерки, 42
-                    </li>
-                    <li class="dropdown__list-item" data-value="orel-livenskaya-76">г. Орел ул. Ливенская, 76</li>
-                    <li class="dropdown__list-item" data-value="kursk-engelsa-173g">г. Курск ул. Энгельса, 173Г</li>
-
-                  </ul>
-                </div>
-
-                <input type="text" name="select-category" value="Выберите город" class="dropdown__input-hidden">
-              </div>
               <!-- доп. фильтр конец  -->
               <div class="filter__btn-wrapper">
                 <button type="submit" class="solid-btn-main solid-btn-main--fullwidth">
@@ -326,7 +301,6 @@
               <div class="car">
                 <div class="car__inner">
                   <!-- ссылка на главное фото из галереи  -->
-
                   <!-- ссылка на оригинальное фото  -->
                   <a href="img/car01.jpg" class="car__part" data-fslightbox="gallery-1">
                     <picture class="car__image">
@@ -350,7 +324,6 @@
                       <span>12 фото</span>
                     </div>
                   </a>
-
                   <!-- остальные фото для галереи  -->
                   <div style="display:none">
                     <a data-fslightbox="gallery-1" href="./img/car-gallery/2.jpg">
@@ -411,12 +384,50 @@
 
               <div class="car">
                 <div class="car__inner">
-                  <a href="#" class="car__part">
+                  <!-- ссылка на главное фото из галереи  -->
+                  <!-- ссылка на оригинальное фото  -->
+                  <a href="img/car02.jpg" class="car__part" data-fslightbox="gallery-1">
                     <picture class="car__image">
+                      <!-- миниатюра  -->
                       <source srcset="img/car02.webp" type="image/webp">
-                      <img src="img/car02.jpg" alt="Infinity FX30d 2013">
+                      <img src="img/car02.jpg" alt="Nissan Murano, 2018">
+
                     </picture>
+                    <div class="car__image-hover">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0 10.9616V25.0808C0 27.2359 1.7502 28.9861 3.90531 28.9861H28.0947C30.2498 28.9861 32 27.2359 32 25.0808V10.9616C32 8.911 30.3347 7.24569 28.2841 7.24569H23.0857L22.9616 6.70365C22.4588 4.52896 20.5453 3.01385 18.3118 3.01385H13.6816C11.4547 3.01385 9.54122 4.52896 9.03184 6.70365L8.90775 7.24569H3.71592C1.66531 7.24569 0 8.91753 0 10.9616ZM9.54775 8.84569C9.92 8.84569 10.24 8.591 10.3249 8.22528L10.5927 7.06283C10.9322 5.61957 12.1992 4.61386 13.6816 4.61386H18.3118C19.7943 4.61386 21.0612 5.61957 21.4008 7.06283L21.6686 8.22528C21.7535 8.58447 22.0735 8.84569 22.4457 8.84569H28.2775C29.4465 8.84569 30.3935 9.79263 30.3935 10.9616V25.0808C30.3935 26.3543 29.3616 27.3861 28.0882 27.3861H3.90531C2.63184 27.3861 1.6 26.3543 1.6 25.0808V10.9616C1.6 9.79263 2.54694 8.84569 3.71592 8.84569H9.54775V8.84569Z"
+                          fill="white" />
+                        <path
+                          d="M5.41379 13.3322C6.0053 13.3322 6.48481 12.8527 6.48481 12.2612C6.48481 11.6697 6.0053 11.1902 5.41379 11.1902C4.82229 11.1902 4.34277 11.6697 4.34277 12.2612C4.34277 12.8527 4.82229 13.3322 5.41379 13.3322Z"
+                          fill="white" />
+                        <path
+                          d="M15.9998 24.8784C19.7026 24.8784 22.7198 21.8612 22.7198 18.1584C22.7198 14.4555 19.7026 11.4384 15.9998 11.4384C12.2969 11.4384 9.27979 14.449 9.27979 18.1584C9.27979 21.8677 12.2969 24.8784 15.9998 24.8784ZM15.9998 13.0384C18.821 13.0384 21.1198 15.3371 21.1198 18.1584C21.1198 20.9796 18.821 23.2784 15.9998 23.2784C13.1786 23.2784 10.8798 20.9796 10.8798 18.1584C10.8798 15.3371 13.1786 13.0384 15.9998 13.0384Z"
+                          fill="white" />
+                      </svg>
+                      <span>12 фото</span>
+                    </div>
                   </a>
+                  <!-- остальные фото для галереи  -->
+                  <div style="display:none">
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/2.jpg">
+                      <img src="./img/car-gallery/2.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/3.jpg">
+                      <img src="./img/car-gallery/3.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/4.jpg">
+                      <img src="./img/car-gallery/4.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/5.jpg">
+                      <img src="./img/car-gallery/5.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/6.jpg">
+                      <img src="./img/car-gallery/6.jpg" alt="">
+                    </a>
+                    
+                  </div>
+
                   <div class="car__part car__part--main">
                     <a href="#" class="car__title">Infinity FX30d 2013</a>
                     <div class="car__informers">
@@ -456,12 +467,49 @@
 
               <div class="car">
                 <div class="car__inner">
-                  <a href="#" class="car__part">
+                  <!-- ссылка на главное фото из галереи  -->
+                  <!-- ссылка на оригинальное фото  -->
+                  <a href="img/car02.jpg" class="car__part" data-fslightbox="gallery-1">
                     <picture class="car__image">
+                      <!-- миниатюра  -->
                       <source srcset="img/car03.webp" type="image/webp">
-                      <img src="img/car03.jpg" alt="Toyota Camry, 2010">
+                      <img src="img/car03.jpg" alt="Nissan Murano, 2018">
+
                     </picture>
+                    <div class="car__image-hover">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0 10.9616V25.0808C0 27.2359 1.7502 28.9861 3.90531 28.9861H28.0947C30.2498 28.9861 32 27.2359 32 25.0808V10.9616C32 8.911 30.3347 7.24569 28.2841 7.24569H23.0857L22.9616 6.70365C22.4588 4.52896 20.5453 3.01385 18.3118 3.01385H13.6816C11.4547 3.01385 9.54122 4.52896 9.03184 6.70365L8.90775 7.24569H3.71592C1.66531 7.24569 0 8.91753 0 10.9616ZM9.54775 8.84569C9.92 8.84569 10.24 8.591 10.3249 8.22528L10.5927 7.06283C10.9322 5.61957 12.1992 4.61386 13.6816 4.61386H18.3118C19.7943 4.61386 21.0612 5.61957 21.4008 7.06283L21.6686 8.22528C21.7535 8.58447 22.0735 8.84569 22.4457 8.84569H28.2775C29.4465 8.84569 30.3935 9.79263 30.3935 10.9616V25.0808C30.3935 26.3543 29.3616 27.3861 28.0882 27.3861H3.90531C2.63184 27.3861 1.6 26.3543 1.6 25.0808V10.9616C1.6 9.79263 2.54694 8.84569 3.71592 8.84569H9.54775V8.84569Z"
+                          fill="white" />
+                        <path
+                          d="M5.41379 13.3322C6.0053 13.3322 6.48481 12.8527 6.48481 12.2612C6.48481 11.6697 6.0053 11.1902 5.41379 11.1902C4.82229 11.1902 4.34277 11.6697 4.34277 12.2612C4.34277 12.8527 4.82229 13.3322 5.41379 13.3322Z"
+                          fill="white" />
+                        <path
+                          d="M15.9998 24.8784C19.7026 24.8784 22.7198 21.8612 22.7198 18.1584C22.7198 14.4555 19.7026 11.4384 15.9998 11.4384C12.2969 11.4384 9.27979 14.449 9.27979 18.1584C9.27979 21.8677 12.2969 24.8784 15.9998 24.8784ZM15.9998 13.0384C18.821 13.0384 21.1198 15.3371 21.1198 18.1584C21.1198 20.9796 18.821 23.2784 15.9998 23.2784C13.1786 23.2784 10.8798 20.9796 10.8798 18.1584C10.8798 15.3371 13.1786 13.0384 15.9998 13.0384Z"
+                          fill="white" />
+                      </svg>
+                      <span>12 фото</span>
+                    </div>
                   </a>
+                  <!-- остальные фото для галереи  -->
+                  <div style="display:none">
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/2.jpg">
+                      <img src="./img/car-gallery/2.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/3.jpg">
+                      <img src="./img/car-gallery/3.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/4.jpg">
+                      <img src="./img/car-gallery/4.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/5.jpg">
+                      <img src="./img/car-gallery/5.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/6.jpg">
+                      <img src="./img/car-gallery/6.jpg" alt="">
+                    </a>
+                    
+                  </div>
                   <div class="car__part car__part--main">
                     <a href="#" class="car__title">Toyota Camry, 2010</a>
                     <div class="car__informers">
@@ -502,12 +550,49 @@
 
               <div class="car">
                 <div class="car__inner">
-                  <a href="#" class="car__part">
+                  <!-- ссылка на главное фото из галереи  -->
+                  <!-- ссылка на оригинальное фото  -->
+                  <a href="img/car02.jpg" class="car__part" data-fslightbox="gallery-1">
                     <picture class="car__image">
+                      <!-- миниатюра  -->
                       <source srcset="img/car04.webp" type="image/webp">
-                      <img src="img/car04.jpg" alt="Nissan Note, 2015">
+                      <img src="img/car04.jpg" alt="Nissan Murano, 2018">
+
                     </picture>
+                    <div class="car__image-hover">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0 10.9616V25.0808C0 27.2359 1.7502 28.9861 3.90531 28.9861H28.0947C30.2498 28.9861 32 27.2359 32 25.0808V10.9616C32 8.911 30.3347 7.24569 28.2841 7.24569H23.0857L22.9616 6.70365C22.4588 4.52896 20.5453 3.01385 18.3118 3.01385H13.6816C11.4547 3.01385 9.54122 4.52896 9.03184 6.70365L8.90775 7.24569H3.71592C1.66531 7.24569 0 8.91753 0 10.9616ZM9.54775 8.84569C9.92 8.84569 10.24 8.591 10.3249 8.22528L10.5927 7.06283C10.9322 5.61957 12.1992 4.61386 13.6816 4.61386H18.3118C19.7943 4.61386 21.0612 5.61957 21.4008 7.06283L21.6686 8.22528C21.7535 8.58447 22.0735 8.84569 22.4457 8.84569H28.2775C29.4465 8.84569 30.3935 9.79263 30.3935 10.9616V25.0808C30.3935 26.3543 29.3616 27.3861 28.0882 27.3861H3.90531C2.63184 27.3861 1.6 26.3543 1.6 25.0808V10.9616C1.6 9.79263 2.54694 8.84569 3.71592 8.84569H9.54775V8.84569Z"
+                          fill="white" />
+                        <path
+                          d="M5.41379 13.3322C6.0053 13.3322 6.48481 12.8527 6.48481 12.2612C6.48481 11.6697 6.0053 11.1902 5.41379 11.1902C4.82229 11.1902 4.34277 11.6697 4.34277 12.2612C4.34277 12.8527 4.82229 13.3322 5.41379 13.3322Z"
+                          fill="white" />
+                        <path
+                          d="M15.9998 24.8784C19.7026 24.8784 22.7198 21.8612 22.7198 18.1584C22.7198 14.4555 19.7026 11.4384 15.9998 11.4384C12.2969 11.4384 9.27979 14.449 9.27979 18.1584C9.27979 21.8677 12.2969 24.8784 15.9998 24.8784ZM15.9998 13.0384C18.821 13.0384 21.1198 15.3371 21.1198 18.1584C21.1198 20.9796 18.821 23.2784 15.9998 23.2784C13.1786 23.2784 10.8798 20.9796 10.8798 18.1584C10.8798 15.3371 13.1786 13.0384 15.9998 13.0384Z"
+                          fill="white" />
+                      </svg>
+                      <span>12 фото</span>
+                    </div>
                   </a>
+                  <!-- остальные фото для галереи  -->
+                  <div style="display:none">
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/2.jpg">
+                      <img src="./img/car-gallery/2.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/3.jpg">
+                      <img src="./img/car-gallery/3.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/4.jpg">
+                      <img src="./img/car-gallery/4.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/5.jpg">
+                      <img src="./img/car-gallery/5.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/6.jpg">
+                      <img src="./img/car-gallery/6.jpg" alt="">
+                    </a>
+                    
+                  </div>
                   <div class="car__part car__part--main">
                     <a href="#" class="car__title">Nissan Note, 2015</a>
                     <div class="car__informers">
@@ -547,12 +632,49 @@
 
               <div class="car">
                 <div class="car__inner">
-                  <a href="#" class="car__part">
+                  <!-- ссылка на главное фото из галереи  -->
+                  <!-- ссылка на оригинальное фото  -->
+                  <a href="img/car02.jpg" class="car__part" data-fslightbox="gallery-1">
                     <picture class="car__image">
+                      <!-- миниатюра  -->
                       <source srcset="img/car05.webp" type="image/webp">
-                      <img src="img/car05.jpg" alt="Mitsubishi Montero Sport, 2003">
+                      <img src="img/car05.jpg" alt="Nissan Murano, 2018">
+
                     </picture>
+                    <div class="car__image-hover">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0 10.9616V25.0808C0 27.2359 1.7502 28.9861 3.90531 28.9861H28.0947C30.2498 28.9861 32 27.2359 32 25.0808V10.9616C32 8.911 30.3347 7.24569 28.2841 7.24569H23.0857L22.9616 6.70365C22.4588 4.52896 20.5453 3.01385 18.3118 3.01385H13.6816C11.4547 3.01385 9.54122 4.52896 9.03184 6.70365L8.90775 7.24569H3.71592C1.66531 7.24569 0 8.91753 0 10.9616ZM9.54775 8.84569C9.92 8.84569 10.24 8.591 10.3249 8.22528L10.5927 7.06283C10.9322 5.61957 12.1992 4.61386 13.6816 4.61386H18.3118C19.7943 4.61386 21.0612 5.61957 21.4008 7.06283L21.6686 8.22528C21.7535 8.58447 22.0735 8.84569 22.4457 8.84569H28.2775C29.4465 8.84569 30.3935 9.79263 30.3935 10.9616V25.0808C30.3935 26.3543 29.3616 27.3861 28.0882 27.3861H3.90531C2.63184 27.3861 1.6 26.3543 1.6 25.0808V10.9616C1.6 9.79263 2.54694 8.84569 3.71592 8.84569H9.54775V8.84569Z"
+                          fill="white" />
+                        <path
+                          d="M5.41379 13.3322C6.0053 13.3322 6.48481 12.8527 6.48481 12.2612C6.48481 11.6697 6.0053 11.1902 5.41379 11.1902C4.82229 11.1902 4.34277 11.6697 4.34277 12.2612C4.34277 12.8527 4.82229 13.3322 5.41379 13.3322Z"
+                          fill="white" />
+                        <path
+                          d="M15.9998 24.8784C19.7026 24.8784 22.7198 21.8612 22.7198 18.1584C22.7198 14.4555 19.7026 11.4384 15.9998 11.4384C12.2969 11.4384 9.27979 14.449 9.27979 18.1584C9.27979 21.8677 12.2969 24.8784 15.9998 24.8784ZM15.9998 13.0384C18.821 13.0384 21.1198 15.3371 21.1198 18.1584C21.1198 20.9796 18.821 23.2784 15.9998 23.2784C13.1786 23.2784 10.8798 20.9796 10.8798 18.1584C10.8798 15.3371 13.1786 13.0384 15.9998 13.0384Z"
+                          fill="white" />
+                      </svg>
+                      <span>12 фото</span>
+                    </div>
                   </a>
+                  <!-- остальные фото для галереи  -->
+                  <div style="display:none">
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/2.jpg">
+                      <img src="./img/car-gallery/2.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/3.jpg">
+                      <img src="./img/car-gallery/3.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/4.jpg">
+                      <img src="./img/car-gallery/4.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/5.jpg">
+                      <img src="./img/car-gallery/5.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/6.jpg">
+                      <img src="./img/car-gallery/6.jpg" alt="">
+                    </a>
+                    
+                  </div>
                   <div class="car__part car__part--main">
                     <a href="#" class="car__title">Mitsubishi Montero Sport, 2003</a>
                     <div class="car__informers">
@@ -592,12 +714,49 @@
 
               <div class="car">
                 <div class="car__inner">
-                  <a href="#" class="car__part">
+                  <!-- ссылка на главное фото из галереи  -->
+                  <!-- ссылка на оригинальное фото  -->
+                  <a href="img/car02.jpg" class="car__part" data-fslightbox="gallery-1">
                     <picture class="car__image">
+                      <!-- миниатюра  -->
                       <source srcset="img/car06.webp" type="image/webp">
                       <img src="img/car06.jpg" alt="Nissan Murano, 2018">
+
                     </picture>
+                    <div class="car__image-hover">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0 10.9616V25.0808C0 27.2359 1.7502 28.9861 3.90531 28.9861H28.0947C30.2498 28.9861 32 27.2359 32 25.0808V10.9616C32 8.911 30.3347 7.24569 28.2841 7.24569H23.0857L22.9616 6.70365C22.4588 4.52896 20.5453 3.01385 18.3118 3.01385H13.6816C11.4547 3.01385 9.54122 4.52896 9.03184 6.70365L8.90775 7.24569H3.71592C1.66531 7.24569 0 8.91753 0 10.9616ZM9.54775 8.84569C9.92 8.84569 10.24 8.591 10.3249 8.22528L10.5927 7.06283C10.9322 5.61957 12.1992 4.61386 13.6816 4.61386H18.3118C19.7943 4.61386 21.0612 5.61957 21.4008 7.06283L21.6686 8.22528C21.7535 8.58447 22.0735 8.84569 22.4457 8.84569H28.2775C29.4465 8.84569 30.3935 9.79263 30.3935 10.9616V25.0808C30.3935 26.3543 29.3616 27.3861 28.0882 27.3861H3.90531C2.63184 27.3861 1.6 26.3543 1.6 25.0808V10.9616C1.6 9.79263 2.54694 8.84569 3.71592 8.84569H9.54775V8.84569Z"
+                          fill="white" />
+                        <path
+                          d="M5.41379 13.3322C6.0053 13.3322 6.48481 12.8527 6.48481 12.2612C6.48481 11.6697 6.0053 11.1902 5.41379 11.1902C4.82229 11.1902 4.34277 11.6697 4.34277 12.2612C4.34277 12.8527 4.82229 13.3322 5.41379 13.3322Z"
+                          fill="white" />
+                        <path
+                          d="M15.9998 24.8784C19.7026 24.8784 22.7198 21.8612 22.7198 18.1584C22.7198 14.4555 19.7026 11.4384 15.9998 11.4384C12.2969 11.4384 9.27979 14.449 9.27979 18.1584C9.27979 21.8677 12.2969 24.8784 15.9998 24.8784ZM15.9998 13.0384C18.821 13.0384 21.1198 15.3371 21.1198 18.1584C21.1198 20.9796 18.821 23.2784 15.9998 23.2784C13.1786 23.2784 10.8798 20.9796 10.8798 18.1584C10.8798 15.3371 13.1786 13.0384 15.9998 13.0384Z"
+                          fill="white" />
+                      </svg>
+                      <span>12 фото</span>
+                    </div>
                   </a>
+                  <!-- остальные фото для галереи  -->
+                  <div style="display:none">
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/2.jpg">
+                      <img src="./img/car-gallery/2.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/3.jpg">
+                      <img src="./img/car-gallery/3.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/4.jpg">
+                      <img src="./img/car-gallery/4.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/5.jpg">
+                      <img src="./img/car-gallery/5.jpg" alt="">
+                    </a>
+                    <a data-fslightbox="gallery-1" href="./img/car-gallery/6.jpg">
+                      <img src="./img/car-gallery/6.jpg" alt="">
+                    </a>
+                    
+                  </div>
                   <div class="car__part car__part--main">
                     <a href="#" class="car__title">Nissan Murano, 2018</a>
                     <div class="car__informers">
@@ -747,7 +906,7 @@
       <div class="container">
         <div class="footer__wrapper">
           <a href="#" class="footer__link">Политика конфиденциальности</a>
-          <p class="footer__text">По всем вопросам: <a href="#" class="footer__link">hello@carstock.ru</a></p>
+          
         </div>
       </div>
     </footer>
@@ -1028,12 +1187,14 @@
 
   </main>
   <script src="./js/fslightbox.js"></script>
+
   <script src="./js/Accordion.js"></script>
   <script src="./js/Sorting.js"></script>
   <script src="./js/FloatingFilter.js"></script>
   <script src="./js/Timer.js"></script>
   <script src="./js/Panels.js"></script>
-  <script src="./js/dropdown-list.js"></script>
+
+  <script src="./js/custom.js"></script>
 
 </body>
 

@@ -1,4 +1,5 @@
 :root {
+  --header-height: 100px;
   --ff-in: 'Inter';
   --ff-sf: 'SF UI Display';
   --ff-rob: 'Roboto';
@@ -62,81 +63,36 @@
 
 @font-face {
   font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Regular.eot");
-  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Regular.woff2") format("woff2"), url("SFUIDisplay-Regular.woff") format("woff"), url("SFUIDisplay-Regular.ttf") format("truetype");
-  font-weight: normal;
+  src: local(""), url("../fonts/SFUIDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Heavy.eot");
-  src: local("SF UI Display Heavy"), local("SFUIDisplay-Heavy"), url("SFUIDisplay-Heavy.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Heavy.woff2") format("woff2"), url("SFUIDisplay-Heavy.woff") format("woff"), url("SFUIDisplay-Heavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Heavy.eot");
-  src: local("SF UI Text Heavy"), local("SFUIText-Heavy"), url("SFUIText-Heavy.eot?#iefix") format("embedded-opentype"), url("SFUIText-Heavy.woff2") format("woff2"), url("SFUIText-Heavy.woff") format("woff"), url("SFUIText-Heavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Semibold.eot");
-  src: local("SF UI Text Semibold"), local("SFUIText-Semibold"), url("SFUIText-Semibold.eot?#iefix") format("embedded-opentype"), url("SFUIText-Semibold.woff2") format("woff2"), url("SFUIText-Semibold.woff") format("woff"), url("SFUIText-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Semibold.eot");
-  src: local("SF UI Display Semibold"), local("SFUIDisplay-Semibold"), url("SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Semibold.woff2") format("woff2"), url("SFUIDisplay-Semibold.woff") format("woff"), url("SFUIDisplay-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Medium.eot");
-  src: local("SF UI Text Medium"), local("SFUIText-Medium"), url("SFUIText-Medium.eot?#iefix") format("embedded-opentype"), url("SFUIText-Medium.woff2") format("woff2"), url("SFUIText-Medium.woff") format("woff"), url("SFUIText-Medium.ttf") format("truetype");
+  src: local(""), url("../fonts/SFUIDisplay-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Bold.eot");
-  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Bold.woff2") format("woff2"), url("SFUIDisplay-Bold.woff") format("woff"), url("SFUIDisplay-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Regular.eot");
-  src: local("SF UI Text Regular"), local("SFUIText-Regular"), url("SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("SFUIText-Regular.woff2") format("woff2"), url("SFUIText-Regular.woff") format("woff"), url("SFUIText-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Bold.eot");
-  src: local("SF UI Text Bold"), local("SFUIText-Bold"), url("SFUIText-Bold.eot?#iefix") format("embedded-opentype"), url("SFUIText-Bold.woff2") format("woff2"), url("SFUIText-Bold.woff") format("woff"), url("SFUIText-Bold.ttf") format("truetype");
-  font-weight: bold;
+  src: local(""), url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Medium.eot");
-  src: local("SF UI Display Medium"), local("SFUIDisplay-Medium"), url("SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Medium.woff2") format("woff2"), url("SFUIDisplay-Medium.woff") format("woff"), url("SFUIDisplay-Medium.ttf") format("truetype");
-  font-weight: 500;
+  src: local(""), url("../fonts/SFUIDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: local(""), url("../fonts/SFUIDisplay-Heavy.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -198,81 +154,36 @@
 
 @font-face {
   font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Regular.eot");
-  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Regular.woff2") format("woff2"), url("SFUIDisplay-Regular.woff") format("woff"), url("SFUIDisplay-Regular.ttf") format("truetype");
-  font-weight: normal;
+  src: local(""), url("../fonts/SFUIDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Heavy.eot");
-  src: local("SF UI Display Heavy"), local("SFUIDisplay-Heavy"), url("SFUIDisplay-Heavy.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Heavy.woff2") format("woff2"), url("SFUIDisplay-Heavy.woff") format("woff"), url("SFUIDisplay-Heavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Heavy.eot");
-  src: local("SF UI Text Heavy"), local("SFUIText-Heavy"), url("SFUIText-Heavy.eot?#iefix") format("embedded-opentype"), url("SFUIText-Heavy.woff2") format("woff2"), url("SFUIText-Heavy.woff") format("woff"), url("SFUIText-Heavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Semibold.eot");
-  src: local("SF UI Text Semibold"), local("SFUIText-Semibold"), url("SFUIText-Semibold.eot?#iefix") format("embedded-opentype"), url("SFUIText-Semibold.woff2") format("woff2"), url("SFUIText-Semibold.woff") format("woff"), url("SFUIText-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Semibold.eot");
-  src: local("SF UI Display Semibold"), local("SFUIDisplay-Semibold"), url("SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Semibold.woff2") format("woff2"), url("SFUIDisplay-Semibold.woff") format("woff"), url("SFUIDisplay-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Medium.eot");
-  src: local("SF UI Text Medium"), local("SFUIText-Medium"), url("SFUIText-Medium.eot?#iefix") format("embedded-opentype"), url("SFUIText-Medium.woff2") format("woff2"), url("SFUIText-Medium.woff") format("woff"), url("SFUIText-Medium.ttf") format("truetype");
+  src: local(""), url("../fonts/SFUIDisplay-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Bold.eot");
-  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Bold.woff2") format("woff2"), url("SFUIDisplay-Bold.woff") format("woff"), url("SFUIDisplay-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Regular.eot");
-  src: local("SF UI Text Regular"), local("SFUIText-Regular"), url("SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("SFUIText-Regular.woff2") format("woff2"), url("SFUIText-Regular.woff") format("woff"), url("SFUIText-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF UI Text';
-  src: url("SFUIText-Bold.eot");
-  src: local("SF UI Text Bold"), local("SFUIText-Bold"), url("SFUIText-Bold.eot?#iefix") format("embedded-opentype"), url("SFUIText-Bold.woff2") format("woff2"), url("SFUIText-Bold.woff") format("woff"), url("SFUIText-Bold.ttf") format("truetype");
-  font-weight: bold;
+  src: local(""), url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF UI Display';
-  src: url("SFUIDisplay-Medium.eot");
-  src: local("SF UI Display Medium"), local("SFUIDisplay-Medium"), url("SFUIDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("SFUIDisplay-Medium.woff2") format("woff2"), url("SFUIDisplay-Medium.woff") format("woff"), url("SFUIDisplay-Medium.ttf") format("truetype");
-  font-weight: 500;
+  src: local(""), url("../fonts/SFUIDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: local(""), url("../fonts/SFUIDisplay-Heavy.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -478,7 +389,7 @@
   border: 1px solid #364457;
 }
 
-.footer__link {
+.main--login .footer__link {
   color: #fff;
 }
 
@@ -526,14 +437,6 @@
   right: 12px;
 }
 
-.car {
-  transition: all 0.5s ease-in-out;
-}
-
-.car:hover {
-  transform: translateX(24px);
-}
-
 .car__part {
   position: relative;
   color: #ffffff;
@@ -559,4 +462,147 @@
 
 .car__part:hover .car__image-hover {
   opacity: 1;
+}
+
+.car__price:hover,
+.car__title:hover {
+  color: #F64512;
+}
+
+.pagination__button--active {
+  background-color: #F64512;
+}
+
+.pagination__more-icon {
+  background-color: #F64512;
+}
+
+.pagination__more-icon::after,
+.pagination__more-icon::before {
+  background-color: #F64512;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: initial;
+}
+
+.pagination__more-icon::before {
+  left: -.8rem;
+}
+
+.pagination__more-icon::after {
+  right: -.8rem;
+}
+
+.pagination__more-text {
+  font-family: var(--ff-sf);
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #131820;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.hot-lots__lot-link {
+  font-family: var(--ff-sf);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #F39313;
+}
+
+.city {
+  font-family: var(--ff-in);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #131820;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 111;
+}
+
+.header.sticky {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sorting,
+.breadcrumbs {
+  margin-top: var(--header-height);
+}
+
+.list__subtitle {
+  line-height: 1.2;
+}
+
+.modal.show {
+  margin-top: var(--header-height);
+}
+
+.back-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none !important;
+  font-family: var(--ff-in);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  color: #F39313;
+}
+
+.doc-download {
+  padding: 0 10% 2.5rem;
+}
+
+.docs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.docs-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+  font-family: var(--ff-in);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  color: #F39313;
+}
+
+.docs-list span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid #97A9B6;
+  max-width: max-content;
+  font-family: var(--ff-in);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  color: #131820;
+}
+
+.hot-tag {
+  background-color: #E8E8E9;
+  border: 1px solid #E8E8E9;
+  color: #131820;
+  text-transform: none;
+}
+
+.comment {
+  padding-bottom: 16px;
 }
