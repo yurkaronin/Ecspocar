@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Мой аккаунт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+  <main class="main">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__part">
+            <a href="index.html" class="logo">car:stock</a>
+          </div>
+          <div class="header__part">
+
+            <a href="#" class="ghost-btn"><span class="ghost-btn__text">Регистрация</span></a>
+
+
+            <a href="#" class="solid-btn solid-btn--offset-left"><span class="solid-btn__text">Вход</span></a>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">К аукциону</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--inactive">Техподдержка</a></li>
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link breadcrumbs__link--common">Как это работает</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="my-account">
+      <div class="container">
+        <div class="my-account__inner">
+          <h1>Мой аккаунт</h1>
+          <div class="my-account__row">
+            <div class="my-account__tabs js-my-account-tabs">
+              <div class="my-account__scrollr">
+                <div class="my-account__tab-list js-my-account-tabs">
+                  <div class="my-account__tab js-my-account-tab" data-tab="#my-lots">Мои ставки</div>
+                  <div class="my-account__tab js-my-account-tab" data-tab="#history">История покупок</div>
+                  <div class="my-account__tab js-my-account-tab" data-tab="#profile">Данные аккаунта</div>
+                  <div class="my-account__tab js-my-account-tab" data-tab="#empty">Пример пустого таба</div>
+                </div>
+              </div>
+              <div class="my-account__panel js-my-account-panel" id="my-lots">
+                <div class="car">
+                  <div class="car__inner">
+                    <a href="#" class="car__part">
+                      <picture class="car__image">
+                        <source srcset="img/car01.webp" type="image/webp">
+                        <img src="img/car01.jpg" alt="Nissan Murano 2014">
+                      </picture>
+                    </a>
+                    <div class="car__part car__part--main">
+                      <a href="#" class="car__title">Nissan Murano 2014</a>
+                      <div class="car__informers">
+                        <div class="new-tag">NEW</div>
+                        <div class="hot-tag">Горячий лот</div>
+                        <a href="#" class="quick-view">Быстрый просмотр</a>
+                      </div>
+                      <div class="car__informers car__informers--low">
+                        <div class="city">Ейск</div>
+                        <div class="struck">Битый</div>
+                      </div>
+                    </div>
+                    <div class="car__part">
+                      <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                      <p class="car__annotation">
+                        <span class="car__annotation-part">До 10:50</span>
+                        <span class="car__annotation-part">22.10.2020</span>
+                      </p>
+                      <p class="car__annotation">
+                        <span class="car__annotation-part">Ставок</span>
+                        <span class="car__annotation-part">5</span>
+                      </p>
+                      <div class="car__time">
+                        <div class="car__time-wrapper">
+                          <img src="img/svg-min/clock.svg" alt="Часы" class="car__time-icon">
+                          <p class="car__time-numbers" data-time="">02:00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="car__part">
+                      <ul class="car__descr">
+                        <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                        <li class="car__descr-item">Бензин</li>
+                        <li class="car__descr-item">АКПП вариатор</li>
+                        <li class="car__descr-item">4WD</li>
+                        <li class="car__descr-item">135 000 км.</li>
+                        <li class="car__descr-item">2 011 г.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-account__panel js-my-account-panel" id="history">
+                <div class="car">
+                  <div class="car__inner">
+                    <a href="#" class="car__part">
+                      <picture class="car__image">
+                        <source srcset="img/car02.webp" type="image/webp">
+                        <img src="img/car02.jpg" alt="Nissan Murano 2014">
+                      </picture>
+                    </a>
+                    <div class="car__part car__part--main">
+                      <a href="#" class="car__title">Nissan Murano 2014</a>
+                      <div class="car__informers">
+                        <a href="#" class="quick-view">Быстрый просмотр</a>
+                      </div>
+                      <div class="car__informers car__informers--low">
+                        <div class="city">Ейск</div>
+                        <div class="struck">Битый</div>
+                      </div>
+                    </div>
+                    <div class="car__part">
+                      <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                      <p class="car__annotation">
+                        <span class="car__annotation-part">Ставка закрыта</span>
+                        <span class="car__annotation-part">22.10.2020</span>
+                      </p>
+                    </div>
+                    <div class="car__part">
+                      <ul class="car__descr">
+                        <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                        <li class="car__descr-item">Бензин</li>
+                        <li class="car__descr-item">АКПП вариатор</li>
+                        <li class="car__descr-item">4WD</li>
+                        <li class="car__descr-item">135 000 км.</li>
+                        <li class="car__descr-item">2 011 г.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="car">
+                  <div class="car__inner">
+                    <a href="#" class="car__part">
+                      <picture class="car__image">
+                        <source srcset="img/car03.webp" type="image/webp">
+                        <img src="img/car03.jpg" alt="Nissan Murano 2014">
+                      </picture>
+                    </a>
+                    <div class="car__part car__part--main">
+                      <a href="#" class="car__title">Nissan Murano 2014</a>
+                      <div class="car__informers">
+                        <a href="#" class="quick-view">Быстрый просмотр</a>
+                      </div>
+                      <div class="car__informers car__informers--low">
+                        <div class="city">Ейск</div>
+                        <div class="struck">Битый</div>
+                      </div>
+                    </div>
+                    <div class="car__part">
+                      <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                      <p class="car__annotation">
+                        <span class="car__annotation-part">Ставка закрыта</span>
+                        <span class="car__annotation-part">22.10.2020</span>
+                      </p>
+                    </div>
+                    <div class="car__part">
+                      <ul class="car__descr">
+                        <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                        <li class="car__descr-item">Бензин</li>
+                        <li class="car__descr-item">АКПП вариатор</li>
+                        <li class="car__descr-item">4WD</li>
+                        <li class="car__descr-item">135 000 км.</li>
+                        <li class="car__descr-item">2 011 г.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="my-account__panel js-my-account-panel" id="profile">
+                <form action="#" class="my-account__form">
+                  <p class="my-account__form-title">Личные данные</p>
+
+                  <div class="text-field ">
+                    <input type="text" name="last-name" id="last-name" class="text-field__input" placeholder=" ">
+                    <label for="last-name" class="text-field__label">Фамилия</label>
+                  </div>
+
+
+                  <div class="text-field text-field--half">
+                    <input type="text" name="first-name" id="first-name" class="text-field__input" placeholder=" ">
+                    <label for="first-name" class="text-field__label">Имя</label>
+                  </div>
+
+
+                  <div class="text-field text-field--half">
+                    <input type="text" name="surname" id="surname" class="text-field__input" placeholder=" ">
+                    <label for="surname" class="text-field__label">Отчество</label>
+                  </div>
+
+
+                  <div class="text-field text-field--half">
+                    <input type="text" name="city" id="city" class="text-field__input" placeholder=" ">
+                    <label for="city" class="text-field__label">Город</label>
+                  </div>
+
+                  <p class="my-account__form-title">Данные аккаунта</p>
+
+                  <div class="text-field text-field--half">
+                    <input type="text" name="phone" id="phone" class="text-field__input" placeholder=" ">
+                    <label for="phone" class="text-field__label">Телефон</label>
+                  </div>
+
+
+                  <div class="text-field ">
+                    <input type="text" name="email" id="email" class="text-field__input" placeholder=" ">
+                    <label for="email" class="text-field__label">Электронная почта</label>
+                  </div>
+
+                  <div class="my-account__form-btns-wrapper">
+                    <div class="my-account__form-btn-wrapper">
+
+                      <a href="#" class="solid-btn-main ">
+                        <span class="solid-btn-main__text">Сохранить</span>
+                      </a>
+
+                    </div>
+                    <div class="my-account__form-btn-wrapper">
+
+                      <a href="#" class="solid-btn-main solid-btn-main--error">
+                        <span class="solid-btn-main__text">Отменить</span>
+                      </a>
+
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="my-account__panel js-my-account-panel" id="empty">
+                <div class="my-account__empty">
+                  <p class="my-account__empty-text">Сейчас у вас нет активных ставок</p>
+                  <img src="img/svg-min/empty-car.svg" alt="Машина" class="my-account__image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+          <p class="footer__text">По всем вопросам: <a href="#" class="footer__link">hello@carstock.ru</a></p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/TabMaker.js"></script>
+  <script src="js/Account.js"></script>
+
+</body>
+
+</html>

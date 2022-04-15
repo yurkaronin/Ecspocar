@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Мои лоты</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+  <main class="main">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__part">
+            <a href="index.html" class="logo">car:stock</a>
+          </div>
+          <div class="header__part">
+
+            <a href="#" class="ghost-btn"><span class="ghost-btn__text">Регистрация</span></a>
+
+
+            <a href="#" class="solid-btn solid-btn--offset-left"><span class="solid-btn__text">Вход</span></a>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">К аукциону</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--inactive">Техподдержка</a></li>
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link breadcrumbs__link--common">Как это работает</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="container">
+        <div class="panel__inner">
+          <div class="panel__wrapper panel__wrapper--filter-btn">
+            <a href="#" class="ghost-btn-main" data-open>
+              <span class="ghost-btn-main__text">Фильтр</span>
+            </a>
+          </div>
+          <div class="panel__wrapper panel__wrapper--aside">
+            <div class="panel__radio-set">
+              <p class="panel__filter-title">Лоты</p>
+              <div class="radio-field">
+                <input type="radio" name="lots" id="my-lots" class="radio-field__input visually-hidden" checked>
+                <label for="my-lots" class="radio-field__label">Мои лоты</label>
+              </div>
+              <div class="radio-field">
+                <input type="radio" name="lots" id="my-active-lots" class="radio-field__input visually-hidden">
+                <label for="my-active-lots" class="radio-field__label">Мои активные лоты</label>
+              </div>
+              <div class="radio-field">
+                <input type="radio" name="lots" id="new-lot" class="radio-field__input visually-hidden">
+                <label for="new-lot" class="radio-field__label">Новый лот</label>
+              </div>
+              <div class="radio-field">
+                <input type="radio" name="lots" id="won-lots" class="radio-field__input visually-hidden">
+                <label for="won-lots" class="radio-field__label">Выигранные лоты</label>
+              </div>
+            </div>
+            <div class="panel__radio-set">
+              <p class="panel__filter-title">Пользователи</p>
+              <div class="radio-field">
+                <input type="radio" name="lots" id="users-list" class="radio-field__input visually-hidden">
+                <label for="users-list" class="radio-field__label">Список пользователей</label>
+              </div>
+            </div>
+            <div class="panel__radio-set">
+              <p class="panel__filter-title">Админ</p>
+              <div class="radio-field">
+                <input type="radio" name="lots" id="all-lots" class="radio-field__input visually-hidden">
+                <label for="all-lots" class="radio-field__label">Все лоты</label>
+              </div>
+              <div class="radio-field">
+                <input type="radio" name="lots" id="all-active-lots" class="radio-field__input visually-hidden">
+                <label for="all-active-lots" class="radio-field__label">Все активные лоты</label>
+              </div>
+            </div>
+          </div>
+          <div class="panel__wrapper">
+            <h1 class="panel__title">Мои лоты</h1>
+            <form action="#" class="panel__search">
+
+              <div class="text-field text-field--half">
+                <input type="text" name="serach-by-lotname" id="serach-by-lotname" class="text-field__input" placeholder=" ">
+                <label for="serach-by-lotname" class="text-field__label">Поиск по имени лота</label>
+              </div>
+
+
+              <div class="text-field text-field--half">
+                <input type="text" name="serach-by-lotid" id="serach-by-lotid" class="text-field__input" placeholder=" ">
+                <label for="serach-by-lotid" class="text-field__label">Поиск по ID лота</label>
+              </div>
+
+              <div class="panel__search-row">
+                <div class="panel__search-btn-wrapper">
+                  <button type="submit" class="solid-btn-main">
+                    <span class="solid-btn-main__text">Найти лоты</span>
+                  </button>
+                </div>
+                <div class="panel__search-btn-wrapper">
+
+                  <a href="#" class="solid-btn-main solid-btn-main--error">
+                    <span class="solid-btn-main__text">Отменить</span>
+                  </a>
+
+                </div>
+              </div>
+              <div class="panel__table-wrapper">
+                <table class="panel__table" cols="6">
+                  <tr class="panel__table-title">
+                    <th>ID лота</th>
+                    <th>Название лота</th>
+                    <th>Автомобиль лота</th>
+                    <th>Действия</th>
+                    <th>Создал / Редактировал</th>
+                    <th>Окончание аукциона</th>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                  <tr>
+                    <td>43&nbsp323</td>
+                    <td><a href="#">Тестовый лот</a></td>
+                    <td>
+                      <ul>
+                        <li>Audi A6 Allroad Quattro — WAUZZZ4F7AN028590</li>
+                        <li>ID 37369</li>
+                      </ul>
+                    </td>
+                    <td><a href="#">Редактировать</a></td>
+                    <td>
+                      <ul>
+                        <li>Создал Админ Админов</li>
+                        <li>Отредактировал Админ Админов</li>
+                      </ul>
+                    </td>
+                    <td>08.08.2020 17:03:00</td>
+                  </tr>
+                </table>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+          <p class="footer__text">По всем вопросам: <a href="#" class="footer__link">hello@carstock.ru</a></p>
+        </div>
+      </div>
+    </footer>
+    <section class="modal">
+      <button class="modal__close" data-close="true"></button>
+      <form action="#" class="modal__body">
+        <h2>Заголовок</h2>
+        <div class="modal__radio-set">
+          <p class="panel__filter-title">Лоты</p>
+          <div class="radio-field">
+            <input type="radio" name="modal-lots" id="modal-my-lots" class="radio-field__input visually-hidden" checked>
+            <label for="modal-my-lots" class="radio-field__label">Мои лоты</label>
+          </div>
+          <div class="radio-field">
+            <input type="radio" name="modal-lots" id="modal-my-active-lots" class="radio-field__input visually-hidden">
+            <label for="modal-my-active-lots" class="radio-field__label">Мои активные лоты</label>
+          </div>
+          <div class="radio-field">
+            <input type="radio" name="modal-lots" id="modal-new-lot" class="radio-field__input visually-hidden">
+            <label for="modal-new-lot" class="radio-field__label">Новый лот</label>
+          </div>
+          <div class="radio-field">
+            <input type="radio" name="modal-lots" id="modal-won-lots" class="radio-field__input visually-hidden">
+            <label for="modal-won-lots" class="radio-field__label">Выигранные лоты</label>
+          </div>
+        </div>
+        <div class="modal__radio-set">
+          <p class="panel__filter-title">Пользователи</p>
+          <div class="radio-field">
+            <input type="radio" name="modal-lots" id="modal-users-list" class="radio-field__input visually-hidden">
+            <label for="modal-users-list" class="radio-field__label">Список пользователей</label>
+          </div>
+        </div>
+        <div class="modal__radio-set">
+          <p class="panel__filter-title">Админ</p>
+          <div class="radio-field">
+            <input type="radio" name="modal-lots" id="modal-all-lots" class="radio-field__input visually-hidden">
+            <label for="modal-all-lots" class="radio-field__label">Все лоты</label>
+          </div>
+          <div class="radio-field">
+            <input type="radio" name="modal-lots" id="modal-all-active-lots" class="radio-field__input visually-hidden">
+            <label for="modal-all-active-lots" class="radio-field__label">Все активные лоты</label>
+          </div>
+        </div>
+        <button type="submit" class="solid-btn-main solid-btn-main--fullwidth">
+          <span class="solid-btn-main__text">Найти лоты</span>
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="js/FloatingFilter.js"></script>
+
+</body>
+
+</html>

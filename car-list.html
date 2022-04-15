@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Аукцион</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+  <main class="main">
+
+    <header class="header header--search">
+      <div class="container">
+        <div class="header__inner header__inner--search">
+          <div class="header__part">
+            <a href="index.html" class="logo">car:stock</a>
+          </div>
+          <div class="header__part">
+            <a href="#" class="cart cart--not-empty">
+              <img src="img/svg-min/cart.svg" alt="Корзина покупок" class="cart__image">
+              <p class="cart__text">Мои ставки</p>
+            </a>
+            <div class="account" id="account">
+              <p class="account__title">Здравствуйте, <span class="account__title-person" id="username">Венцеслав</span></p>
+              <div class="account__avatar">
+                <span class="account__avatar-letter">В</span>
+              </div>
+              <ul class="account__dropper">
+                <li class="account__dropper-item">
+                  <a href="#" class="account__dropper-link">Личный кабинет</a>
+                </li>
+                <li class="account__dropper-item">
+                  <a href="#" class="account__dropper-link">Выйти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <div class="container">
+          <div class="search__inner">
+            <input type="search" name="search" id="search" class="search__input" placeholder="Поиск">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="sorting">
+      <div class="container">
+        <div class="sorting__inner">
+          <p class="sorting__title">Сортировка:</p>
+          <p class="sorting__type sorting__type--active sorting__type--active-reversed" data-sorting="price">По цене</p>
+          <p class="sorting__type" data-sorting="date">По дате</p>
+          <p class="sorting__type" data-sorting="year">По году выпуска</p>
+        </div>
+      </div>
+    </section>
+    <section class="list">
+      <div class="container">
+        <div class="list__inner">
+          <div class="list__wrapper">
+            <div class="list__filter-btn">
+              <a href="#" class="ghost-btn-main ghost-btn-main--fullwidth" data-open>
+                <span class="ghost-btn-main__text">Фильтр</span>
+              </a>
+            </div>
+            <form action="#" class="filter filter--side">
+              <button class="filter__title js-accordion" id="accordion-open">
+                <span class="filter__title-text">Марка машины</span>
+                <img src="img/svg-min/filter-arrow.svg" alt="Стрелка" class="filter__icon">
+              </button>
+              <div class="filter__panel" id="brands">
+                <div class="filter__panel-part">
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="lada" id="lada" class="visually-hidden checkbox-field__input">
+                      <label for="lada" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="audi" id="audi" class="visually-hidden checkbox-field__input">
+                      <label for="audi" class="checkbox-field__label"><span class="checkbox-field__label-text">Audi</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="bmw" id="bmw" class="visually-hidden checkbox-field__input">
+                      <label for="bmw" class="checkbox-field__label"><span class="checkbox-field__label-text">BMW</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="chery" id="chery" class="visually-hidden checkbox-field__input">
+                      <label for="chery" class="checkbox-field__label"><span class="checkbox-field__label-text">Chery</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="chevrolet" id="chevrolet" class="visually-hidden checkbox-field__input">
+                      <label for="chevrolet" class="checkbox-field__label"><span class="checkbox-field__label-text">Chevrolet</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="citroen" id="citroen" class="visually-hidden checkbox-field__input">
+                      <label for="citroen" class="checkbox-field__label"><span class="checkbox-field__label-text">Citroen</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="daewoo" id="daewoo" class="visually-hidden checkbox-field__input">
+                      <label for="daewoo" class="checkbox-field__label"><span class="checkbox-field__label-text">Daewoo</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="datsun" id="datsun" class="visually-hidden checkbox-field__input">
+                      <label for="datsun" class="checkbox-field__label"><span class="checkbox-field__label-text">Datsun</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="ford" id="ford" class="visually-hidden checkbox-field__input">
+                      <label for="ford" class="checkbox-field__label"><span class="checkbox-field__label-text">Ford</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="geely" id="geely" class="visually-hidden checkbox-field__input">
+                      <label for="geely" class="checkbox-field__label"><span class="checkbox-field__label-text">Geely</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="mercedes-benz" id="mercedes-benz" class="visually-hidden checkbox-field__input">
+                      <label for="mercedes-benz" class="checkbox-field__label"><span class="checkbox-field__label-text">Mercedes-Benz</span></label>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="filter__panel-part js-invisible-part js-switching-part">
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="lada1" id="lada1" class="visually-hidden checkbox-field__input">
+                      <label for="lada1" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA1</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="audi1" id="audi1" class="visually-hidden checkbox-field__input">
+                      <label for="audi1" class="checkbox-field__label"><span class="checkbox-field__label-text">Audi1</span></label>
+                    </div>
+
+                  </div>
+                  <div class="filter__checkbox-wrapper">
+
+                    <div class="checkbox-field">
+                      <input type="checkbox" name="bmw1" id="bmw1" class="visually-hidden checkbox-field__input">
+                      <label for="bmw1" class="checkbox-field__label"><span class="checkbox-field__label-text">BMW1</span></label>
+                    </div>
+
+                  </div>
+                </div>
+                <a class="filter__panel-switcher" id="switcher">Все бренды</a>
+              </div>
+              <button class="filter__title js-accordion">
+                <span class="filter__title-text">Цена, тысяч руб.</span>
+                <img src="img/svg-min/filter-arrow.svg" alt="Стрелка" class="filter__icon">
+              </button>
+              <div class="filter__panel">
+                <div class="filter__double-input-wrapper">
+
+                  <div class="text-field text-field--double">
+                    <input type="text" name="low-price" id="low-price" class="text-field__input" placeholder=" ">
+                    <label for="low-price" class="text-field__label">От</label>
+                  </div>
+
+
+                  <div class="text-field text-field--double">
+                    <input type="text" name="high-price" id="high-price" class="text-field__input" placeholder=" ">
+                    <label for="high-price" class="text-field__label">До</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="filter__btn-wrapper">
+                <button type="submit" class="solid-btn-main solid-btn-main--fullwidth">
+                  <span class="solid-btn-main__text">Подобрать</span>
+                </button>
+              </div>
+            </form>
+            <div class="list__set">
+              <picture class="informer">
+                <source srcset="img/informer.webp" media="(min-width: 640px)" type="image/webp">
+                <source srcset="img/mob.webp" media="(min-width: 320px)" type="image/webp">
+                <img src="img/informer.png" alt="Распродажа">
+              </picture>
+              <h2 class="list__subtitle">Заголовок 1</h2>
+
+              <div class="car">
+                <div class="car__inner">
+                  <a href="#" class="car__part">
+                    <picture class="car__image">
+                      <source srcset="img/car01.webp" type="image/webp">
+                      <img src="img/car01.jpg" alt="Nissan Murano, 2018">
+                    </picture>
+                  </a>
+                  <div class="car__part car__part--main">
+                    <a href="#" class="car__title">Nissan Murano, 2018</a>
+                    <div class="car__informers">
+                      <div class="new-tag ">NEW</div>
+                      <div class="hot-tag">Горячий лот</div>
+
+                    </div>
+                    <div class="car__informers car__informers--low">
+                      <div class="city">Ейск</div>
+                      <div class="struck ">Битый</div>
+                    </div>
+                  </div>
+                  <div class="car__part">
+                    <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part car__annotation-part--timer">Осталось</span>
+                      <span class="car__annotation-part car__annotation-part--timer" data-time="168"></span>
+                    </p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part">Ставок</span>
+                      <span class="car__annotation-part">5</span>
+                    </p>
+                  </div>
+                  <div class="car__part">
+                    <ul class="car__descr">
+                      <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                      <li class="car__descr-item">Бензин</li>
+                      <li class="car__descr-item">АКПП вариатор</li>
+                      <li class="car__descr-item">4WD</li>
+                      <li class="car__descr-item">135 000 км.</li>
+                      <li class="car__descr-item">2 011 г.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="car">
+                <div class="car__inner">
+                  <a href="#" class="car__part">
+                    <picture class="car__image">
+                      <source srcset="img/car02.webp" type="image/webp">
+                      <img src="img/car02.jpg" alt="Infinity FX30d 2013">
+                    </picture>
+                  </a>
+                  <div class="car__part car__part--main">
+                    <a href="#" class="car__title">Infinity FX30d 2013</a>
+                    <div class="car__informers">
+                      <div class="new-tag tag-hide">NEW</div>
+                      <div class="hot-tag">Горячий лот</div>
+
+                    </div>
+                    <div class="car__informers car__informers--low">
+                      <div class="city">Ейск</div>
+                      <div class="struck tag-hide">Битый</div>
+                    </div>
+                  </div>
+                  <div class="car__part">
+                    <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part car__annotation-part--timer">Осталось</span>
+                      <span class="car__annotation-part car__annotation-part--timer" data-time="168"></span>
+                    </p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part">Ставок</span>
+                      <span class="car__annotation-part">5</span>
+                    </p>
+                  </div>
+                  <div class="car__part">
+                    <ul class="car__descr">
+                      <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                      <li class="car__descr-item">Бензин</li>
+                      <li class="car__descr-item">АКПП вариатор</li>
+                      <li class="car__descr-item">4WD</li>
+                      <li class="car__descr-item">135 000 км.</li>
+                      <li class="car__descr-item">2 011 г.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="car">
+                <div class="car__inner">
+                  <a href="#" class="car__part">
+                    <picture class="car__image">
+                      <source srcset="img/car03.webp" type="image/webp">
+                      <img src="img/car03.jpg" alt="Toyota Camry, 2010">
+                    </picture>
+                  </a>
+                  <div class="car__part car__part--main">
+                    <a href="#" class="car__title">Toyota Camry, 2010</a>
+                    <div class="car__informers">
+                      <div class="new-tag tag-hide">NEW</div>
+                      <div class="hot-tag">Горячий лот</div>
+
+                    </div>
+                    <div class="car__informers car__informers--low">
+                      <div class="city">Ейск</div>
+                      <div class="struck tag-hide">Битый</div>
+                    </div>
+                  </div>
+                  <div class="car__part">
+                    <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part car__annotation-part--timer">Осталось</span>
+                      <span class="car__annotation-part car__annotation-part--timer" data-time="168"></span>
+                    </p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part">Ставок</span>
+                      <span class="car__annotation-part">5</span>
+                    </p>
+                  </div>
+                  <div class="car__part">
+                    <ul class="car__descr">
+                      <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                      <li class="car__descr-item">Бензин</li>
+                      <li class="car__descr-item">АКПП вариатор</li>
+                      <li class="car__descr-item">4WD</li>
+                      <li class="car__descr-item">135 000 км.</li>
+                      <li class="car__descr-item">2 011 г.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="list__subtitle">Заголовок 2</h2>
+
+              <div class="car">
+                <div class="car__inner">
+                  <a href="#" class="car__part">
+                    <picture class="car__image">
+                      <source srcset="img/car04.webp" type="image/webp">
+                      <img src="img/car04.jpg" alt="Nissan Note, 2015">
+                    </picture>
+                  </a>
+                  <div class="car__part car__part--main">
+                    <a href="#" class="car__title">Nissan Note, 2015</a>
+                    <div class="car__informers">
+                      <div class="new-tag ">NEW</div>
+                      <div class="hot-tag">Горячий лот</div>
+
+                    </div>
+                    <div class="car__informers car__informers--low">
+                      <div class="city">Ейск</div>
+                      <div class="struck ">Битый</div>
+                    </div>
+                  </div>
+                  <div class="car__part">
+                    <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part car__annotation-part--timer">Осталось</span>
+                      <span class="car__annotation-part car__annotation-part--timer" data-time="168"></span>
+                    </p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part">Ставок</span>
+                      <span class="car__annotation-part">5</span>
+                    </p>
+                  </div>
+                  <div class="car__part">
+                    <ul class="car__descr">
+                      <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                      <li class="car__descr-item">Бензин</li>
+                      <li class="car__descr-item">АКПП вариатор</li>
+                      <li class="car__descr-item">4WD</li>
+                      <li class="car__descr-item">135 000 км.</li>
+                      <li class="car__descr-item">2 011 г.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="car">
+                <div class="car__inner">
+                  <a href="#" class="car__part">
+                    <picture class="car__image">
+                      <source srcset="img/car05.webp" type="image/webp">
+                      <img src="img/car05.jpg" alt="Mitsubishi Montero Sport, 2003">
+                    </picture>
+                  </a>
+                  <div class="car__part car__part--main">
+                    <a href="#" class="car__title">Mitsubishi Montero Sport, 2003</a>
+                    <div class="car__informers">
+                      <div class="new-tag tag-hide">NEW</div>
+                      <div class="hot-tag">Горячий лот</div>
+
+                    </div>
+                    <div class="car__informers car__informers--low">
+                      <div class="city">Ейск</div>
+                      <div class="struck tag-hide">Битый</div>
+                    </div>
+                  </div>
+                  <div class="car__part">
+                    <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part car__annotation-part--timer">Осталось</span>
+                      <span class="car__annotation-part car__annotation-part--timer" data-time="168"></span>
+                    </p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part">Ставок</span>
+                      <span class="car__annotation-part">5</span>
+                    </p>
+                  </div>
+                  <div class="car__part">
+                    <ul class="car__descr">
+                      <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                      <li class="car__descr-item">Бензин</li>
+                      <li class="car__descr-item">АКПП вариатор</li>
+                      <li class="car__descr-item">4WD</li>
+                      <li class="car__descr-item">135 000 км.</li>
+                      <li class="car__descr-item">2 011 г.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="car">
+                <div class="car__inner">
+                  <a href="#" class="car__part">
+                    <picture class="car__image">
+                      <source srcset="img/car06.webp" type="image/webp">
+                      <img src="img/car06.jpg" alt="Nissan Murano, 2018">
+                    </picture>
+                  </a>
+                  <div class="car__part car__part--main">
+                    <a href="#" class="car__title">Nissan Murano, 2018</a>
+                    <div class="car__informers">
+                      <div class="new-tag ">NEW</div>
+                      <div class="hot-tag">Горячий лот</div>
+
+                    </div>
+                    <div class="car__informers car__informers--low">
+                      <div class="city">Ейск</div>
+                      <div class="struck ">Битый</div>
+                    </div>
+                  </div>
+                  <div class="car__part">
+                    <p class="car__price"><span class="car__price--value">3 060 000</span> руб.</p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part car__annotation-part--timer">Осталось</span>
+                      <span class="car__annotation-part car__annotation-part--timer" data-time="168"></span>
+                    </p>
+                    <p class="car__annotation">
+                      <span class="car__annotation-part">Ставок</span>
+                      <span class="car__annotation-part">5</span>
+                    </p>
+                  </div>
+                  <div class="car__part">
+                    <ul class="car__descr">
+                      <li class="car__descr-item">3.5 л (249 л.с.)</li>
+                      <li class="car__descr-item">Бензин</li>
+                      <li class="car__descr-item">АКПП вариатор</li>
+                      <li class="car__descr-item">4WD</li>
+                      <li class="car__descr-item">135 000 км.</li>
+                      <li class="car__descr-item">2 011 г.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <section class="pagination">
+                <div class="pagination__row pagination__row--center">
+                  <a href="#" class="pagination__more">
+                    <span class="pagination__more-icon"></span>
+                    <span class="pagination__more-text">Показать еще</span>
+                  </a>
+                </div>
+                <div class="pagination__row">
+                  <ul class="pagination__button"><a href="#" class="pagination__button--prev">Предыдущая</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common pagination__button--active">1</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">2</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">3</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">4</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">5</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">6</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">7</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">8</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">9</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">...</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--common">117</a></ul>
+                  <ul class="pagination__button"><a href="#" class="pagination__button--next">Следующая</a></ul>
+                </div>
+              </section>
+              <div class="hot-lots">
+                <h2>Горячие лоты</h2>
+                <ul class="hot-lots__list">
+                  <li class="hot-lots__item"><a href="#" class="hot-lots__lot-link">Toyota Camry 2015</a></li>
+                  <li class="hot-lots__item"><a href="#" class="hot-lots__lot-link">Land Cruiser Prado 2007</a></li>
+                  <li class="hot-lots__item"><a href="#" class="hot-lots__lot-link">Mercedes-Benz 123 1984</a></li>
+                  <li class="hot-lots__item"><a href="#" class="hot-lots__lot-link">Porsche Cayman 2007 серый металлик</a></li>
+                  <li class="hot-lots__item"><a href="#" class="hot-lots__lot-link">Volkswagen Polo 2012</a></li>
+                  <li class="hot-lots__item"><a href="#" class="hot-lots__lot-link">Mercedes-Benz 123 1984</a></li>
+                  <li class="hot-lots__item"><a href="#" class="hot-lots__lot-link">Porsche Cayman 2007 серый металлик</a></li>
+                  <li class="hot-lots__item"><a href="#" class="hot-lots__lot-link">Volkswagen Polo 2012</a></li>
+                </ul>
+              </div>
+              <div class="recent-views">
+                <h2>Вы недавно смотрели</h2>
+                <div class="recent-views__set">
+
+                  <div class="recent-card">
+                    <a href="#" class="recent-card__inner">
+                      <picture class="recent-card__image">
+                        <source srcset="img/car03.webp" type="image/webp">
+                        <img src="img/car03.jpg" alt="Toyota Camry 2015">
+                      </picture>
+                      <div class="recent-card__info">
+                        <p href="$" class="recent-card__title">Toyota Camry 2015</p>
+                        <p class="recent-card__price">от <span class="recent-card__price-value">800 000</span> руб.</p>
+                        <div class="city">Ейск</div>
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <div class="recent-card">
+                    <a href="#" class="recent-card__inner">
+                      <picture class="recent-card__image">
+                        <source srcset="img/car05.webp" type="image/webp">
+                        <img src="img/car05.jpg" alt="Mitsubishi Montero Sport, 2003">
+                      </picture>
+                      <div class="recent-card__info">
+                        <p href="$" class="recent-card__title">Mitsubishi Montero Sport, 2003</p>
+                        <p class="recent-card__price">от <span class="recent-card__price-value">800 000</span> руб.</p>
+                        <div class="city">Ейск</div>
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <div class="recent-card">
+                    <a href="#" class="recent-card__inner">
+                      <picture class="recent-card__image">
+                        <source srcset="img/car01.webp" type="image/webp">
+                        <img src="img/car01.jpg" alt="Nissan Murano 2018">
+                      </picture>
+                      <div class="recent-card__info">
+                        <p href="$" class="recent-card__title">Nissan Murano 2018</p>
+                        <p class="recent-card__price">от <span class="recent-card__price-value">800 000</span> руб.</p>
+                        <div class="city">Ейск</div>
+                      </div>
+                    </a>
+                  </div>
+
+
+                  <div class="recent-card">
+                    <a href="#" class="recent-card__inner">
+                      <picture class="recent-card__image">
+                        <source srcset="img/car05.webp" type="image/webp">
+                        <img src="img/car05.jpg" alt="Mitsubishi Montero Sport, 2003">
+                      </picture>
+                      <div class="recent-card__info">
+                        <p href="$" class="recent-card__title">Mitsubishi Montero Sport, 2003</p>
+                        <p class="recent-card__price">от <span class="recent-card__price-value">800 000</span> руб.</p>
+                        <div class="city">Ейск</div>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+          <p class="footer__text">По всем вопросам: <a href="#" class="footer__link">hello@carstock.ru</a></p>
+        </div>
+      </div>
+    </footer>
+    <section class="modal modal--list">
+      <button class="modal__close" data-close="true"></button>
+      <form action="#" class="modal__body">
+        <h2>Заголовок</h2>
+        <p class="panel__filter-title">Марка машины</p>
+        <div class="modal__set">
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada21" id="lada21" class="visually-hidden checkbox-field__input">
+              <label for="lada21" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA2</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada31" id="lada31" class="visually-hidden checkbox-field__input">
+              <label for="lada31" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA3</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada41" id="lada41" class="visually-hidden checkbox-field__input">
+              <label for="lada41" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA4</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada5" id="lada5" class="visually-hidden checkbox-field__input">
+              <label for="lada5" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA5</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada6" id="lada6" class="visually-hidden checkbox-field__input">
+              <label for="lada6" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA6</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada7" id="lada7" class="visually-hidden checkbox-field__input">
+              <label for="lada7" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA7</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada8" id="lada8" class="visually-hidden checkbox-field__input">
+              <label for="lada8" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA8</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada9" id="lada9" class="visually-hidden checkbox-field__input">
+              <label for="lada9" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA9</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada10" id="lada10" class="visually-hidden checkbox-field__input">
+              <label for="lada10" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA10</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada22" id="lada22" class="visually-hidden checkbox-field__input">
+              <label for="lada22" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA2</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada32" id="lada32" class="visually-hidden checkbox-field__input">
+              <label for="lada32" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA3</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada42" id="lada42" class="visually-hidden checkbox-field__input">
+              <label for="lada42" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA4</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada52" id="lada52" class="visually-hidden checkbox-field__input">
+              <label for="lada52" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA5</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada62" id="lada62" class="visually-hidden checkbox-field__input">
+              <label for="lada62" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA6</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada72" id="lada72" class="visually-hidden checkbox-field__input">
+              <label for="lada72" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA7</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada82" id="lada82" class="visually-hidden checkbox-field__input">
+              <label for="lada82" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA8</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada92" id="lada92" class="visually-hidden checkbox-field__input">
+              <label for="lada92" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA9</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada102" id="lada102" class="visually-hidden checkbox-field__input">
+              <label for="lada102" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA10</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada23" id="lada23" class="visually-hidden checkbox-field__input">
+              <label for="lada23" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA2</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada33" id="lada33" class="visually-hidden checkbox-field__input">
+              <label for="lada33" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA3</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada43" id="lada43" class="visually-hidden checkbox-field__input">
+              <label for="lada43" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA4</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada53" id="lada53" class="visually-hidden checkbox-field__input">
+              <label for="lada53" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA5</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada63" id="lada63" class="visually-hidden checkbox-field__input">
+              <label for="lada63" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA6</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada73" id="lada73" class="visually-hidden checkbox-field__input">
+              <label for="lada73" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA7</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada83" id="lada83" class="visually-hidden checkbox-field__input">
+              <label for="lada83" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA8</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada93" id="lada93" class="visually-hidden checkbox-field__input">
+              <label for="lada93" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA9</span></label>
+            </div>
+
+          </div>
+          <div class="filter__checkbox-wrapper">
+
+            <div class="checkbox-field">
+              <input type="checkbox" name="lada103" id="lada103" class="visually-hidden checkbox-field__input">
+              <label for="lada103" class="checkbox-field__label"><span class="checkbox-field__label-text">LADA10</span></label>
+            </div>
+
+          </div>
+        </div>
+        <p class="panel__filter-title">Цена, тыс. руб.</p>
+        <div class="modal__set">
+          <div class="filter__double-input-wrapper">
+
+            <div class="text-field text-field--double">
+              <input type="text" name="low-price1" id="low-price1" class="text-field__input" placeholder=" ">
+              <label for="low-price1" class="text-field__label">От</label>
+            </div>
+
+
+            <div class="text-field text-field--double">
+              <input type="text" name="high-price1" id="high-price1" class="text-field__input" placeholder=" ">
+              <label for="high-price1" class="text-field__label">До</label>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal__set">
+          <button type="submit" class="solid-btn-main solid-btn-main--fullwidth">
+            <span class="solid-btn-main__text">Подобрать</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="js/Accordion.js"></script>
+  <script src="js/Sorting.js"></script>
+  <script src="js/FloatingFilter.js"></script>
+  <script src="js/Timer.js"></script>
+  <script src="js/Panels.js"></script>
+
+</body>
+
+</html>

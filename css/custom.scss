@@ -1,0 +1,148 @@
+// ronin 14.04.2022 
+
+:root {
+  // --header-height: 60px;
+  --ff-in: 'Inter';
+  --ff-sf: 'SF UI Display';
+  --ff-rob: 'Roboto';
+
+}
+
+@import "parts/fonts";
+@import "parts/fonts";
+@import "parts/dropdown-list";
+
+
+// новые элементы 
+.cust-btn--wh {
+  font-family: var(--ff-in);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #112145;
+  padding: 5px 25px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  border: 1px solid #FFFFFF;
+}
+
+// телефон в шапке 
+.cust-tel {
+  font-family: var(--ff-in);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #131820;
+  text-decoration: none !important;
+}
+
+// Страница авторизации 
+.main {
+  background-image: url(../img/bg/1.jpg);
+  background-size: cover;
+  background-position: top center;
+  font-family: var(--ff-in);
+}
+
+.opener {
+
+  &__title {
+    color: #ffffff;
+    margin-top: 0;
+  }
+
+  &__inner {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-family: var(--ff-in);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.67;
+    color: #FFFFFF;
+  }
+
+  .form__btn-wrapper--offset-top {
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .solid-btn-main {
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__inner {
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.header__part--last {
+  margin-left: auto;
+}
+
+// простая кнопка 
+.ghost-btn {
+  font-family: var(--ff-in);
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: inherit;
+  color: #ffffff;
+  padding: 5px 25px;
+  background: #F39313;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  border: 1px solid #F39313;
+}
+
+.solid-btn {
+  font-family: var(--ff-in);
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: inherit;
+  color: #ffffff;
+  padding: 5px 25px;
+  background: #364457;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  border: 1px solid #364457;
+}
+
+.footer__link {
+  color: #fff;
+}
+
+.header__dropdown {
+  max-width: 250px;
+}
+
+.ghost-btn-main:hover,
+.main-btn-abstract:hover,
+.solid-btn-main:hover,
+.ghost-btn:hover,
+.solid-btn:hover {
+  background-color: #F39313;
+  border-color: #F39313;
+}
