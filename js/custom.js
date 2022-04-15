@@ -14,3 +14,5 @@ function include(url) {
 
 include("./js/parts/header-sticky.js");
 include("./js/parts/dropdown-list.js");
+
+Inputmask("+7 (999) 999-99-99").mask('[type="tel"]');
