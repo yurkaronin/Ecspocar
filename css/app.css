@@ -1054,7 +1054,7 @@ html {
 }
 
 .car__part {
-  padding: 0 1rem;
+  margin: 0 1rem;
   width: calc(100%/9*2);
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;

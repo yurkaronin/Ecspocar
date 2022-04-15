@@ -1,1 +1,486 @@
-@charset "UTF-8";.font-abstract{font-family:'Inter',sans-serif}@media (max-width:1439px){.content__informer{padding:0}.content__wrapper--main{width:70%}.content__wrapper--aside{width:30%;padding-left:2rem}.information__wrapper{width:100%}.information__wrapper--centroid{width:auto;margin-top:-.25rem}.information__form{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.information__form-part{width:100%}.tabs__title{padding:1rem 0;font-size:.75rem}}@media (max-width:1365px){.filter--side{display:none}.list__set{width:100%;padding:0 1rem}.car__price,.car__title{font-size:1rem}.car__descr-item{font-size:.75rem}}@media (max-width:1279px){.content__informer{display:none}.content__wrapper--main{width:100%}.content__wrapper--aside{display:none}.list__subtitle{padding:0 1rem}.list__set{margin:0 -1rem;width:calc(100% + 32px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}.list__filter-btn{display:block;width:100%;padding:1rem 1rem 0}.informer{padding:0 1rem;width:auto;margin-bottom:1rem}.informer img{border-radius:.25rem}.car{width:50%;padding:0 1rem;margin-bottom:0;border:0}.car__inner,.car__part{-ms-flex-wrap:wrap;flex-wrap:wrap}.car__inner{padding-bottom:1rem}.car__part{width:100%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.car__informers,.car__part,.car__part--main{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}.car__part--main{margin-top:1rem}.car__informers{width:100%;height:auto}.car__informers--low{margin:0}.car__annotation{width:100%}.car__descr{margin:.5rem 0 1rem;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}.car__descr-item{margin:0 .5rem .25rem 0}.car:first-of-type{display:block;padding-top:0}.car:last-of-type{margin-bottom:0}.quick-view{display:none}.pagination__button{border:0}.pagination__button--common{display:none}.hot-lots,.recent-views{padding:0 1rem}.recent-card{width:50%}.car-info__popup-caller{width:25%}.car-info__pagination{width:2rem;height:2rem}.car-info__part--gallery{padding-right:2.5rem}.information{padding:.5rem 1.5rem}.my-account__panel{margin:0 -1rem}.my-account__form{width:100%;padding:0;margin:0}.my-account__empty-text{padding:0 1rem}.panel__wrapper{width:100%}.panel__wrapper--aside{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:0}.panel__radio-set{margin-bottom:0}}@media (max-width:1023px){.container{width:90%}.opener__inner{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}.opener__title{width:100%}.opener__image{width:60%}.car-info__wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:2rem;margin:0}.car-info__part{width:100%}.car-info__part--gallery,.car-info__part--info{padding:1rem 0}.car-info__part--gallery::after{display:none}.car-info__title{padding:1rem 2rem}.car-info__title h1{margin:0;font-size:1.5rem;line-height:1.33em}.information{padding:0}.information__form{width:unset;margin:0 -1rem}.tabs{padding:1rem 0 0}.comment{padding:0 0 1rem}.my-account__empty{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.my-account__empty-text{width:100%}.my-account__image{margin:1rem 0;width:100%;height:auto}}@media (max-width:920px){.opener__image{width:100%}}@media (max-width:767px){.footer__wrapper{-ms-flex-wrap:wrap;flex-wrap:wrap}.footer__link{width:100%}.footer__text{margin:.5rem 0 0}.text-field--half{width:100%}.content h1{margin-bottom:0}.content h2{font-size:1.25rem}.content__main{padding:1.5rem}.agreement{padding:.5rem 1rem 1rem}.ghost-btn-main,.solid-btn-main{width:100%}.ghost-btn-main--offset-side,.solid-btn-main--offset-side{margin:0;margin:1rem 0 0}.car,.recent-card{width:100%}.sorting{margin-bottom:.5rem}.sorting__title{width:100%;margin-bottom:0}.sorting__inner{-ms-flex-wrap:wrap;flex-wrap:wrap}.sorting__type{margin:0 1rem 0 0;padding-left:0}.account__title,.cart__text{display:none}.car-info__title,.car-info__wrapper{padding:1rem}.my-account__inner{padding:1.5rem}.my-account__scrollr{width:auto;margin:0 -1.5rem;padding-left:1.5rem}.my-account__panel{padding-bottom:0}.my-account__form-btns-wrapper{-ms-flex-wrap:wrap;flex-wrap:wrap}.my-account__form-btn-wrapper{padding:0;margin:0 0 1rem;width:100%}.panel__wrapper--aside{display:none}.panel__wrapper--filter-btn{display:block;width:100%;padding:2rem 2rem 0}.panel__title{width:100%}.panel__search-btn-wrapper{width:100%;padding-bottom:0}}@media (max-width:447px){.information__title{width:100%;margin:0 0 1rem}}
+@charset "UTF-8";
+
+.font-abstract {
+  font-family: 'Inter', sans-serif
+}
+
+@media (max-width:1439px) {
+  .content__informer {
+    padding: 0
+  }
+
+  .content__wrapper--main {
+    width: 70%
+  }
+
+  .content__wrapper--aside {
+    width: 30%;
+    padding-left: 2rem
+  }
+
+  .information__wrapper {
+    width: 100%
+  }
+
+  .information__wrapper--centroid {
+    width: auto;
+    margin-top: -.25rem
+  }
+
+  .information__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+
+  .information__form-part {
+    width: 100%
+  }
+
+  .tabs__title {
+    padding: 1rem 0;
+    font-size: .75rem
+  }
+}
+
+@media (max-width:1365px) {
+  .filter--side {
+    display: none
+  }
+
+  .list__set {
+    width: 100%;
+    padding: 0 1rem
+  }
+
+  .car__price,
+  .car__title {
+    font-size: 1rem
+  }
+
+  .car__descr-item {
+    font-size: .75rem
+  }
+}
+
+@media (max-width:1279px) {
+  .content__informer {
+    display: none
+  }
+
+  .content__wrapper--main {
+    width: 100%
+  }
+
+  .content__wrapper--aside {
+    display: none
+  }
+
+  .list__subtitle {
+    padding: 0 1rem
+  }
+
+  .list__set {
+    margin: 0 -1rem;
+    width: calc(100% + 32px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  .list__filter-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem 1rem 0
+  }
+
+  .informer {
+    padding: 0 1rem;
+    width: auto;
+    margin-bottom: 1rem
+  }
+
+  .informer img {
+    border-radius: .25rem
+  }
+
+  .car {
+    width: 50%;
+    padding: 0 1rem;
+    margin-bottom: 0;
+    border: 0
+  }
+
+  .car__inner,
+  .car__part {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  .car__inner {
+    padding-bottom: 1rem
+  }
+
+  .car__part {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+  }
+
+  .car__informers,
+  .car__part,
+  .car__part--main {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0
+  }
+
+  .car__part--main {
+    margin-top: 1rem
+  }
+
+  .car__informers {
+    width: 100%;
+    height: auto
+  }
+
+  .car__informers--low {
+    margin: 0
+  }
+
+  .car__annotation {
+    width: 100%
+  }
+
+  .car__descr {
+    margin: .5rem 0 1rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  .car__descr-item {
+    margin: 0 .5rem .25rem 0
+  }
+
+  .car:first-of-type {
+    display: block;
+    padding-top: 0
+  }
+
+  .car:last-of-type {
+    margin-bottom: 0
+  }
+
+  .quick-view {
+    display: none
+  }
+
+  .pagination__button {
+    border: 0
+  }
+
+  .pagination__button--common {
+    display: none
+  }
+
+  .hot-lots,
+  .recent-views {
+    padding: 0 1rem
+  }
+
+  .recent-card {
+    width: 50%
+  }
+
+  .car-info__popup-caller {
+    width: 25%
+  }
+
+  .car-info__pagination {
+    width: 2rem;
+    height: 2rem
+  }
+
+  .car-info__part--gallery {
+    padding-right: 2.5rem
+  }
+
+  .information {
+    padding: .5rem 1.5rem
+  }
+
+  .my-account__panel {
+    margin: 0 -1rem
+  }
+
+  .my-account__form {
+    width: 100%;
+    padding: 0;
+    margin: 0
+  }
+
+  .my-account__empty-text {
+    padding: 0 1rem
+  }
+
+  .panel__wrapper {
+    width: 100%
+  }
+
+  .panel__wrapper--aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 0
+  }
+
+  .panel__radio-set {
+    margin-bottom: 0
+  }
+}
+
+@media (max-width:1023px) {
+  .container {
+    width: 90%
+  }
+
+  .opener__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  .opener__title {
+    width: 100%
+  }
+
+  .opener__image {
+    width: 60%
+  }
+
+  .car-info__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0
+  }
+
+  .car-info__part {
+    width: 100%
+  }
+
+  .car-info__part--gallery,
+  .car-info__part--info {
+    padding: 1rem 0
+  }
+
+  .car-info__part--gallery::after {
+    display: none
+  }
+
+  .car-info__title {
+    padding: 1rem 2rem
+  }
+
+  .car-info__title h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.33em
+  }
+
+  .information {
+    padding: 0
+  }
+
+  .information__form {
+    width: unset;
+    margin: 0 -1rem
+  }
+
+  .tabs {
+    padding: 1rem 0 0
+  }
+
+  .comment {
+    padding: 0 0 1rem
+  }
+
+  .my-account__empty {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+
+  .my-account__empty-text {
+    width: 100%
+  }
+
+  .my-account__image {
+    margin: 1rem 0;
+    width: 100%;
+    height: auto
+  }
+}
+
+@media (max-width:920px) {
+  .opener__image {
+    width: 100%
+  }
+}
+
+@media (max-width:767px) {
+  .footer__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  .footer__link {
+    width: 100%
+  }
+
+  .footer__text {
+    margin: .5rem 0 0
+  }
+
+  .text-field--half {
+    width: 100%
+  }
+
+  .content h1 {
+    margin-bottom: 0
+  }
+
+  .content h2 {
+    font-size: 1.25rem
+  }
+
+  .content__main {
+    padding: 1.5rem
+  }
+
+  .agreement {
+    padding: .5rem 1rem 1rem
+  }
+
+  .ghost-btn-main,
+  .solid-btn-main {
+    width: 100%
+  }
+
+  .ghost-btn-main--offset-side,
+  .solid-btn-main--offset-side {
+    margin: 0;
+    margin: 1rem 0 0
+  }
+
+  .car,
+  .recent-card {
+    width: 100%
+  }
+
+  .sorting {
+    margin-bottom: .5rem
+  }
+
+  .sorting__title {
+    width: 100%;
+    margin-bottom: 0
+  }
+
+  .sorting__inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  .sorting__type {
+    margin: 0 1rem 0 0;
+    padding-left: 0
+  }
+
+  .account__title,
+  .cart__text {
+    display: none
+  }
+
+  .car-info__title,
+  .car-info__wrapper {
+    padding: 1rem
+  }
+
+  .my-account__inner {
+    padding: 1.5rem
+  }
+
+  .my-account__scrollr {
+    width: auto;
+    margin: 0 -1.5rem;
+    padding-left: 1.5rem
+  }
+
+  .my-account__panel {
+    padding-bottom: 0
+  }
+
+  .my-account__form-btns-wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  .my-account__form-btn-wrapper {
+    padding: 0;
+    margin: 0 0 1rem;
+    width: 100%
+  }
+
+  .panel__wrapper--aside {
+    display: none
+  }
+
+  .panel__wrapper--filter-btn {
+    display: block;
+    width: 100%;
+    padding: 2rem 2rem 0
+  }
+
+  .panel__title {
+    width: 100%
+  }
+
+  .panel__search-btn-wrapper {
+    width: 100%;
+    padding-bottom: 0
+  }
+}
+
+@media (max-width:447px) {
+  .information__title {
+    width: 100%;
+    margin: 0 0 1rem
+  }
+}

@@ -183,22 +183,46 @@
     right: 12px;
   }
 
-  .js-accordion.active {
-    .filter__panel {
-      max-height: 447px !important;
-      height: 100%;
-    }
-  }
-
 
 }
 
+// анимация при наведении на карточку авто в списке
 .car {
   -o-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+
   &:hover {
     transform: translateX(24px);
+  }
+}
+
+.car__part {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none !important;
+
+  .car__image-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: #00000021;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.5s ease-out;
+  }
+
+  &:hover {
+    .car__image-hover {
+      opacity: 1;
+    }
   }
 }
