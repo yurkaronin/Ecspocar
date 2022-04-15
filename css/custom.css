@@ -394,7 +394,7 @@
   text-decoration: none !important;
 }
 
-.main {
+.main--login {
   background-image: url(../img/bg/1.jpg);
   background-size: cover;
   background-position: top center;
@@ -435,7 +435,7 @@
 
 .header__inner {
   justify-content: flex-start;
-  gap: 32px;
+  gap: 8px;
 }
 
 .header__part--last {
@@ -493,4 +493,48 @@
 .solid-btn:hover {
   background-color: #F39313;
   border-color: #F39313;
+}
+
+.list__subtitle {
+  margin-bottom: 31px;
+  color: #364457;
+}
+
+.car + .list__subtitle {
+  margin-top: 33px;
+}
+
+.header__part--tel {
+  margin-left: 16px;
+}
+
+.filter__dropdown .dropdown__button {
+  border: 1px solid #C3C7CD;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #131820;
+  margin-bottom: 26px;
+}
+
+.filter__dropdown .dropdown__button::after {
+  right: 12px;
+}
+
+.filter__dropdown .js-accordion.active .filter__panel {
+  max-height: 447px !important;
+  height: 100%;
+}
+
+.car {
+  transition: all 0.5s ease-in-out;
+}
+
+.car:hover {
+  transform: translateX(24px);
 }
