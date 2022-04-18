@@ -9,6 +9,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная страница</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Include Choices CSS -->
+  <link rel="stylesheet" href="css/choices.min.css" />
 
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/custom.css">
@@ -43,23 +45,20 @@
             </a>
           </div>
 
-          <div class="header__part">
+          <div class="header__part header__part--select">
 
-            <div class="header__dropdown dropdown">
-              <button class="dropdown__button">г. Тула, ул. Рязанская, 38</button>
-              <ul class="dropdown__list">
-                <li class="dropdown__list-item" data-value="tula-ryazanskaya-38">г. Тула, ул. Рязанская, 38</li>
-                <li class="dropdown__list-item" data-value="kaluga-zernovaya-19a">г. Калуга ул. Зерновая, 19а</li>
-                <li class="dropdown__list-item" data-value="kolomna-100-km">г. Коломна 100-й км а/д М 5</li>
-                <li class="dropdown__list-item" data-value="novomoskovsk-kosmonavtov-39g">г. Новомосковск ул. Космонавтов, 39Г</li>
-                <li class="dropdown__list-item" data-value="yaroslavl-pos-nagornyj-dorozhnaya-8">г. Ярославль пос. Нагорный, ул. Дорожная 8</li>
-                <li class="dropdown__list-item" data-value="tver-malye-peremerki-42">г. Тверь Малые Перемерки, 42</li>
-                <li class="dropdown__list-item" data-value="orel-livenskaya-76">г. Орел ул. Ливенская, 76</li>
-                <li class="dropdown__list-item" data-value="kursk-engelsa-173g">г. Курск ул. Энгельса, 173Г</li>
-
-              </ul>
-              <input type="text" name="select-category" value="" class="dropdown__input-hidden">
-            </div>
+            <select name="" id="" class="js-choice">
+              <option value="tula-ryazanskaya-38">г. Тула, ул. Рязанская, 38</option>
+              <option value="kaluga-zernovaya-19a">г. Калуга ул. Зерновая, 19а</option>
+              <option value="kolomna-100-km">г. Коломна 100-й км а/д М 5</option>
+              <option value="novomoskovsk-kosmonavtov-39g">Новомосковск ул.
+                Космонавтов, 39Г</option>
+              <option value="yaroslavl-pos-nagornyj-dorozhnaya-8">г. Ярославль пос.
+                Нагорный, ул. Дорожная 8</option>
+              <option value="tver-malye-peremerki-42">г. Тверь Малые Перемерки, 42</option>
+              <option value="orel-livenskaya-76">г. Орел ул. Ливенская, 76</option>
+              <option value="kursk-engelsa-173g">г. Курск ул. Энгельса, 173Г</option>
+            </select>
 
           </div>
 
@@ -105,6 +104,8 @@
     </footer>
 
   </main>
+  <!-- Include Choices JavaScript -->
+  <script src="./js/choices.min.js"></script>
   <script src="./js/inputmask.min.js"></script>
   <script src="./js/custom.js"></script>
 </body>
